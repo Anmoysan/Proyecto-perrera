@@ -1,0 +1,39 @@
+div.img {
+  display: table;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+div.img img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+}
+
+div.img span {
+  font-size: 11px;
+  display: table-row;
+  background: #FCB77E;
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+nav {
+  background-color: #C8EAD9;
+}
+
+a {
+  color: black;
+}
+
+body {
+  background-color: #EDEDF5;
+}
+
+.animales {
+  text-align: center;
+  margin-top: 100px;
+}

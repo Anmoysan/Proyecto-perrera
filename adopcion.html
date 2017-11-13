@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="app.css">
+  <title>PetSOS</title>
+</head>
+
+<body>
+<nav class="navbar navbar-static-top">
+  <div class="container navegador">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">PetSOS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Inicio</a></li>
+
+        <li class=" dropdown">
+          <a href="adopcion.html" class="dropdown-toggle " data-toggle="dropdown" role="button"
+             aria-haspopup="true" aria-expanded="false">Adoptar animales<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Perros</a>
+            </li>
+            <li><a href="#">Gatos</a></li>
+          </ul>
+        </li>
+
+        <li><a href="comoadoptar.html">Como adoptar un animal</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container animales">
+  <h1>Adopcion de animales</h1><br>
+  <div>
+    <a id="perro" href="">
+      <div class="col-sm-3 col-md-3 img">
+        <img class="logo" src='imagenes/perro.jpg'/>
+        <span>Perros</span>
+      </div>
+    </a>
+    <a id="gato" href="">
+      <div class="col-sm-3 col-md-3 img">
+        <img class="logo" src='imagenes/gato.jpg'/>
+        <span>Gatos</span>
+      </div>
+    </a>
+    <a id="adoptados" href="">
+      <div class="col-sm-3 col-md-3 img">
+        <img class="logo" src='imagenes/adoptado.jpg'/>
+        <span>Adoptados</span>
+      </div>
+    </a>
+  </div>
+</div><!-- /.container -->
+</body>
+</html>
