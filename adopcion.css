@@ -23,8 +23,6 @@ div.img span {
 
 nav {
   background-color: #FFC253;
-  padding-top: 10px;
-  padding-bottom: 15px;ç
   align-self: center;
 }
 
@@ -48,16 +46,14 @@ ul {
 }
 
 .logo {
-  padding-bottom: 5px;
   height: 40px;
 }
 
 nav li ul {
   display:none;
   position:absolute;
-  min-width:140px;
 }
 
-nav li:hover > ul {
+nav li:hover > ul{
   display:block;
 }
