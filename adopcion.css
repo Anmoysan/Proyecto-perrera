@@ -21,21 +21,8 @@ div.img span {
   text-align: center;
 }
 
-nav {
-  background-color: #FFC253;
-  align-self: center;
-}
-
-a {
-  color: black;
-}
-
-body {
-  background-color: #EDEDF5;
-}
-
-ul {
-  list-style: none;
+body h1 {
+  padding-top: 40px;
 }
 
 .animales {
@@ -43,17 +30,4 @@ ul {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
-}
-
-.logo {
-  height: 40px;
-}
-
-nav li ul {
-  display:none;
-  position:absolute;
-}
-
-nav li:hover > ul{
-  display:block;
 }

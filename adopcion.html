@@ -5,39 +5,34 @@
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="adopcion.css">
+  <link rel="stylesheet" href="cssGeneral.css">
   <title>PetSOS</title>
 </head>
 
 <body>
 <header>
-  <img class="logo" src="imagenes/logo.png">
+  <img class="logo" src="imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img class="logo" src="imagenes/logo.png">
+</header>
   <nav>
     <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li class=" dropdown">
-            <a href="adopcion.html" class="dropdown-toggle " data-toggle="dropdown" role="button"
-               aria-haspopup="true" aria-expanded="false">Adoptar animales<span
-                class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">Perros</a>
-              </li>
-              <li><a href="#">Gatos</a></li>
-            </ul>
-          </li>
-          <li><a href="comoadoptar.html">Como adoptar un animal</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <ul class="nav navbar-nav">
+        <li id="index"><a href="index.html">Inicio</a></li>
+        <li id="adoptar">
+          <a href="adopcion.html">Adoptar animales<span class="caret"></span></a>
+          <ul class="dropdown-menu nav">
+            <li><a href="#">Perros</a></li>
+            <li><a href="#">Gatos</a></li>
+          </ul>
+        </li>
+        <li id="instrucciones"><a href="comoadoptar.html">Como adoptar un animal</a></li>
+        <li id="contacto"><a href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
   </nav>
-  <img class="logo" src="imagenes/logo.png">
-</header>
 
 <div class="container">
   <h1>Adopcion de animales</h1><br>
-  <div class="animales">
+  <section class="animales">
     <a id="perro animal" href="">
       <div class="img">
         <img class="animales" src='imagenes/perro.jpg'/>
@@ -56,7 +51,14 @@
         <span>Adoptados</span>
       </div>
     </a>
-  </div>
+  </section>
+
 </div><!-- /.container -->
+<footer>Copyright © Oficial ® - PetSOS
+  <a href="https://www.facebook.com/adaits.es" class="social"><img src="imagenes/facebook.png"></a>
+  <a href="https://mobile.twitter.com/ada_its" class="social"><img src="imagenes/twitter.png"></a>
+  <a href="https://plus.google.com/" class="social"><img src="imagenes/plus.png"></a>
+  <a href="mailto:info@icada.es" class="social"><img src="imagenes/gmail.png"></a>
+</footer>
 </body>
 </html>
