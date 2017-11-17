@@ -22,7 +22,10 @@ div.img span {
 }
 
 nav {
-  background-color: #C8EAD9;
+  background-color: #FFC253;
+  padding-top: 10px;
+  padding-bottom: 15px;ç
+  align-self: center;
 }
 
 a {
@@ -33,7 +36,28 @@ body {
   background-color: #EDEDF5;
 }
 
+ul {
+  list-style: none;
+}
+
 .animales {
   text-align: center;
   margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  padding-bottom: 5px;
+  height: 40px;
+}
+
+nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+nav li:hover > ul {
+  display:block;
 }
