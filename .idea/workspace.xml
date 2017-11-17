@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4430678e-5f50-4c12-b324-e370c6cad8b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adopcion.css" afterPath="$PROJECT_DIR$/adopcion.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adopcion.html" afterPath="$PROJECT_DIR$/adopcion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cssGeneral.css" afterPath="$PROJECT_DIR$/cssGeneral.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -251,7 +248,7 @@
       <updated>1510618137052</updated>
       <workItem from="1510618138242" duration="4302000" />
       <workItem from="1510878203539" duration="12066000" />
-      <workItem from="1510946182038" duration="3019000" />
+      <workItem from="1510946182038" duration="3057000" />
     </task>
     <task id="LOCAL-00001" summary="Submenu">
       <created>1510878231002</created>
@@ -274,11 +271,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510889680875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Navegador, Header y Footer Globales mejorados">
+      <created>1510949232436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510949232436</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19387000" />
+    <option name="totallyTimeSpent" value="19425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -311,7 +315,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Submenu" />
     <MESSAGE value="Navegador, Header y Footer Globales.&#10;Diseño de adopcion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navegador, Header y Footer Globales.&#10;Diseño de adopcion" />
+    <MESSAGE value="Navegador, Header y Footer Globales mejorados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navegador, Header y Footer Globales mejorados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
