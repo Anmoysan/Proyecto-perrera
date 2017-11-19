@@ -7,8 +7,8 @@ window.onload = function crearAnimales() {
 
       //Creo los elementos y le doy atributos
       let a = document.createElement("a");
-      a.setAttribute("class", "animal")
-      a.setAttribute("href", "animal.html=id?" + arrayAnimales[i].id);
+      a.setAttribute("class", "animal");
+      a.setAttribute("href", "animal.html");
 
       let div = document.createElement("div");
       div.setAttribute("class", "img");

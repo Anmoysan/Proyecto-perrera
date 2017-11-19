@@ -71,6 +71,8 @@ body h1 {
 }
 
 @media screen and (max-width: 2000px) and (orientation: portrait) {
-
+  form {
+    display: block;
+  }
 
 }
