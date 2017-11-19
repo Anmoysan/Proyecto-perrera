@@ -1,15 +1,7 @@
 body{
-    background-color: rgb(237,237,245);
-    width: 100%;
-
+    background-color: #EDEDF5;
 }
 
-
-header{
-    background-color: rgb(255, 194, 83);
-    height: 80px;
-    text-align: center;
-}
 .nav-bar{
     border-radius: 10px;
     list-style: none;
@@ -27,14 +19,10 @@ ul li{
     padding-right: 10px;
 }
 
-.container-adoptar{
-    width: 500px;
-    height: 250px;
-}
-
-.container-adoptar2{
-    width:500px;
-    height: 250px;
+.adoptar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .ventajas{
