@@ -25,7 +25,11 @@
 }
 
 form a:hover {
-  color: #505050;
+  color: #922B21;
+}
+
+img.mitad:hover {
+  transform: translate(10px, 10px);
 }
 
 @media screen and (max-width: 2000px) and (orientation: portrait) {

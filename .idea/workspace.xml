@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4430678e-5f50-4c12-b324-e370c6cad8b3" name="Default" comment="Solucion formulario enlace">
+    <list default="true" id="4430678e-5f50-4c12-b324-e370c6cad8b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/adopcion.css" afterPath="$PROJECT_DIR$/css/adopcion.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/animal.css" afterPath="$PROJECT_DIR$/css/animal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/animal.html" afterPath="$PROJECT_DIR$/html/animal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/menuAdopcion.css" afterPath="$PROJECT_DIR$/css/menuAdopcion.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="animal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/animal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="51" column="94" lean-forward="false" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+            <state relative-caret-position="603">
+              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -38,8 +39,8 @@
       <file leaf-file-name="animal.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/animal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            <state relative-caret-position="527">
+              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -58,8 +59,8 @@
       <file leaf-file-name="adopcion.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/adopcion.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="442">
+              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -78,8 +79,8 @@
       <file leaf-file-name="menuAdopcion.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/menuAdopcion.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -112,14 +113,14 @@
         <option value="$PROJECT_DIR$/menuAdopcion.css" />
         <option value="$PROJECT_DIR$/cssGeneral.css" />
         <option value="$PROJECT_DIR$/js/adopcion.js" />
-        <option value="$PROJECT_DIR$/css/menuAdopcion.css" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/js/objetosPrueba.js" />
-        <option value="$PROJECT_DIR$/css/adopcion.css" />
         <option value="$PROJECT_DIR$/css/cssGeneral.css" />
         <option value="$PROJECT_DIR$/html/adopcion.html" />
         <option value="$PROJECT_DIR$/html/animal.html" />
+        <option value="$PROJECT_DIR$/css/adopcion.css" />
+        <option value="$PROJECT_DIR$/css/menuAdopcion.css" />
         <option value="$PROJECT_DIR$/css/animal.css" />
       </list>
     </option>
@@ -438,7 +439,7 @@
       <workItem from="1510878203539" duration="12066000" />
       <workItem from="1510946182038" duration="3822000" />
       <workItem from="1511052366565" duration="26211000" />
-      <workItem from="1511124519998" duration="4229000" />
+      <workItem from="1511124519998" duration="4753000" />
     </task>
     <task id="LOCAL-00001" summary="Submenu">
       <created>1510878231002</created>
@@ -517,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511127233068</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Solucion formulario enlace">
+      <created>1511129708266</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1511129708266</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53750000" />
+    <option name="totallyTimeSpent" value="54274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -559,7 +567,8 @@
     <MESSAGE value="Organizacion del proyecto y parte index" />
     <MESSAGE value="media queri general" />
     <MESSAGE value="Fin parte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin parte" />
+    <MESSAGE value="Solucion formulario enlace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solucion formulario enlace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -841,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/adopcion.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contacto/contacto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -881,14 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/adopcion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/adopcion.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -905,10 +898,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/animal.html">
+    <entry file="file://$PROJECT_DIR$/css/adopcion.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="51" column="94" lean-forward="false" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+        <state relative-caret-position="442">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/adopcion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -923,16 +924,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/menuAdopcion.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/animal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/animal.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="527">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding />
         </state>
       </provider>
