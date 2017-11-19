@@ -32,7 +32,7 @@ a.animal:hover {
 
 div.img {
   display: table;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -67,4 +67,10 @@ body h1 {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 2000px) and (orientation: portrait) {
+
+
 }

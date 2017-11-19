@@ -1,6 +1,6 @@
 window.onload = function crearAnimales() {
 //Guardo el elemento tabla mediante la IP
-  let section = document.getElementById("animales");
+  let section = document.getElementsByClassName("animales");
 
     //Recorro el arrayAnimales
     for (let i = 0; i < arrayAnimales.length; i++) {
@@ -27,6 +27,6 @@ window.onload = function crearAnimales() {
 
       console.log(div);
       a.appendChild(div);
-      section.appendChild(a);
+      section[0].appendChild(a);
     }
 };

@@ -42,3 +42,10 @@ body h1 {
 .animales a:hover {
   color: #505050;
 }
+
+@media screen and (max-width: 2000px) and (orientation: portrait) {
+
+  .animales {
+    flex-wrap: wrap;
+  }
+}
