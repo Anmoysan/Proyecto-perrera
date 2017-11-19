@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(237,237,245);
+
+}
+
+
+header{
+    background-color: rgb(255, 194, 83);
+    height: 80px;
+}
+.nav-bar{
+    border-radius: 10px;
+    list-style: none;
+}
+ul li{
+    display: inline;
+    list-style-type: none;
+    color: black;
+    font-family: Coolvetica;
+    padding-right: 10px;
+}
+
