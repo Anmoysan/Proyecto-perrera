@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo-comoadoptar.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-bar">
+        <ul>
+        <li><a href="#">¿Cómo adoptar?</a></li>
+        <li>/</li>
+        <li><a href="#">Puntos a tener en cuenta</a></li>
+        <li>/</li>
+        <li><a href="#">Información legal</a></li>
+        <li>/</li>
+        <li><a href="#">Consejos</a></li>
+        <li>/</li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Rellena el siguiente formulario</h2>
+</div>
+<div class="container">
+
+    <h3>Datos del animal</h3>
+    <form action="" method="POST">
+        <div class="form-group row">
+            <label for="nombre" class="col-md-1 col-form-label">Nombre</label>
+            <div class="col-md-4">
+                <input type="text" name="nombre" id="nombre" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="raza" class="col-md-1 col-form-label">Raza</label>
+            <div class="col-md-4">
+                <input type="text" name="raza" id="raza" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="edad" class="col-md-1 col-form-label">Edad (años)</label>
+            <div class="col-md-4">
+                <input type="number" name="edad" id="edad" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-check">
+            Selecciona el sexo:
+            <span class="col-12"></span>
+            <label class="form-radio-label">
+                <input type="radio" name="sexo" id="hombre" class="form-radio-input">Macho
+                <input type="radio" name="sexo" id="mujer" class="form-radio-input">Hembra
+            </label>
+        </div>
+        <span class="col-md-12"></span>
+
+        <h3>Datos de la persona adoptante</h3>
+        <div class="form-group row">
+            <label for="Nombre" class="col-md-1">Nombre</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Apellidos" class="col-md-1 col-form-label">Apellidos</label>
+            <div class="col-md-4">
+                <input type="text" name="raza" id="Apellidos" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="edadPersona" class="col-md-1 col-form-label">Edad</label>
+            <div class="col-md-4">
+                <input type="number" name="edad" id="edadPersona" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="direccion" class="col-md-1 col-form-label">Dirección</label>
+            <div class="col-md-4">
+                <input type="text" name="raza" id="direccion"   class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="dni" class="col-md-1 col-form-label">DNI</label>
+            <div class="col-md-4">
+                <input type="text" name="edad" id="dni" class="form-control" required>
+            </div>
+        </div>
+
+        <input type="checkbox" name="terminos" required>He leido los términos y condiciones y los acepto.
+        <span class="col-12"></span><br><br>
+        <input type="submit" name="enviar" value="Enviar" class="btn btn-default">
+        <span class="col-md-12"></span>
+    </form>
+</div>
+
+
+</body>
+</html>
