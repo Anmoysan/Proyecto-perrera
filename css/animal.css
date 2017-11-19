@@ -17,6 +17,17 @@
   flex-direction: column;
 }
 
+.boton {
+  height: 40px;
+  background-color: #F6D479;
+  margin-top: 30px;
+  float: right;
+}
+
+form a:hover {
+  color: #505050;
+}
+
 @media screen and (max-width: 2000px) and (orientation: portrait) {
   .body div {
     display: block;
