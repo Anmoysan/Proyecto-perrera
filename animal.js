@@ -1,9 +1,14 @@
 class Animal {
-  constructor(nombre, descripcion, tipo, raza, estado, genero, edad, tamaño,
-      peso) {
+  constructor(id, imagen, nombre, descripcion, tipo, raza, estado, genero, edad, tamaño, peso) {
     /**
-     * Se controla en nombre, descripcion, genero y plataforma si son cadena vacia o de tipo numero.
+     * Se controla en imagen, nombre, descripcion, tipo, raza, estado, genero y tamaño si son cadena vacia o de tipo numero.
      */
+    if (imagen.length === 0) {
+      throw new Error(error);
+    } else {
+      this.imagen = imagen;
+    }
+
     if (nombre === "" || typeof nombre !== "string") {
       throw new Error(error);
     } else {
@@ -19,9 +24,6 @@ class Animal {
     if (tipo === "" || typeof tipo !== "string") {
       throw new Error(error);
     } else {
-      if (tipo !== "perro" && tipo !== "gato") {
-
-      }
       this.tipo = tipo;
     }
 
@@ -52,6 +54,14 @@ class Animal {
     /**
      * En plataforma se controla que la edad y peso no sea menor de 0 y que el tipo de dato no sea de tipo cadena
      */
+
+    this.id = id;
+
+    if (edad < 0 || typeof edad !== "number") {
+      throw new Error(error);
+    } else {
+      this.edad = edad;
+    }
 
     if (edad < 0 || typeof edad !== "number") {
       throw new Error(error);

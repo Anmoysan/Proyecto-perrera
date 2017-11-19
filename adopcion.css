@@ -1,13 +1,44 @@
-div.img {
-  display: table;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  transition: all 2s ease-in-out;
+form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F6D479;
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
 }
 
+form div {
+  background-color: #FFC253;
+  padding: 15px;
+}
+
+.boton {
+  height: 100px;
+}
+
+.razas {
+  width: 200px;
+}
+
+a.animal {
+  margin: 15px;
+  width: 300px;
+  height: 200px;
+}
+
+a.animal:hover {
+  color: #505050;
+}
+
+div.img {
+  display: table;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*Diferenciar el animal seleccionado*/
 div.img:hover {
-  transform: rotate(720deg) scale(2,2);
+  transform: translate(0px, -30px);
 }
 
 div.img img {
@@ -15,12 +46,13 @@ div.img img {
   padding: 0;
   width: 300px;
   height: 200px;
+  object-fit: cover;
 }
 
 div.img span {
   font-size: 11px;
   display: table-row;
-  background: #FFC253;
+  background: #F6D479;
   font-style: italic;
   padding: 5px;
   text-align: center;
@@ -28,11 +60,11 @@ div.img span {
 
 body h1 {
   padding-top: 40px;
+  column-count: 1;
 }
 
 .animales {
   text-align: center;
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }

@@ -2,13 +2,18 @@
 body {
   background-color: #EDEDF5;
   margin-bottom: 40px;
+  font-family: "Helvetica";
 }
 
-a {
+h1, header strong {
+  font-family: "Coolvetica";
+}
+
+a:link, a:visited {
   color: black;
 }
 
-a:hover {
+a:hover, a:active {
   color: #F6D479;
 }
 
@@ -48,9 +53,6 @@ footer {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
-}
-
-.social {
   height: 30px;
   width: 30px;
 }
@@ -59,6 +61,7 @@ footer {
 /*Header y nav*/
 header {
   font-size: x-large;
+  column-count: 1;
 }
 
 header:hover {
@@ -68,6 +71,10 @@ header:hover {
   -moz-transform: scale(2);
   -o-transform: scale(2);
   -ms-transform: scale(2);
+}
+
+header img {
+  object-fit: cover;
 }
 
 nav, header {
@@ -99,4 +106,15 @@ ul.nav {
 
 .logo {
   height: 40px;
+}
+
+/*Fuente*/
+@font-face {
+  font-family: "Coolvetica";
+  src: url("fuente/coolvetica/coolvetica_rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("fuente/helvetica/HELVE7.ttf") format("truetype");
 }

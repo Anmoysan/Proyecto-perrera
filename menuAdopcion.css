@@ -1,0 +1,44 @@
+div.img {
+  display: table;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all 2s ease-in-out;
+}
+
+/*Efecto añadido para mejorar la visualizacion*/
+div.img:hover {
+  transform: rotate(720deg) scale(2,2) translate(0px, 30px);
+}
+
+div.img img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+div.img span {
+  font-size: 11px;
+  display: table-row;
+  background: #F6D479;
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+body h1 {
+  padding-top: 40px;
+  column-count: 1;
+}
+
+.animales {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.animales a:hover {
+  color: #505050;
+}

@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript" src="animal.js"></script>
+  <script type="text/javascript" src="objetosPrueba.js"></script>
+  <script type="text/javascript" src="adopcion.js"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="adopcion.css">
@@ -11,43 +14,61 @@
 
 <body>
 <header>
-  <img class="logo" src="imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img class="logo" src="imagenes/logo.png">
+  <img class="logo" src="imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
+    class="logo" src="imagenes/logo.png">
 </header>
-  <nav>
-    <div class="container">
-      <ul class="nav navbar-nav">
-        <li id="index"><a href="index.html">Inicio</a></li>
-        <li id="adoptar"><a href="adopcion.html">Adoptar animales</a></li>
-        <li id="instrucciones"><a href="comoadoptar.html">Como adoptar un animal</a></li>
-        <li id="contacto"><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+
+<nav>
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li id="index"><a href="index.html">Inicio</a></li>
+      <li id="adoptar"><a href="menuAdopcion.html">Adoptar animales</a></li>
+      <li id="instrucciones"><a href="comoadoptar.html">Como adoptar un animal</a></li>
+      <li id="contacto"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
-  <h1>Adopcion de animales</h1><br>
-  <section class="animales">
-    <a id="perro animal" href="">
-      <div class="img">
-        <img class="animales" src='imagenes/perro.jpg'/>
-        <span>Perros</span>
-      </div>
-    </a>
-    <a id="gato animal" href="">
-      <div class="img">
-        <img class="animales" src='imagenes/gato.jpg'/>
-        <span>Gatos</span>
-      </div>
-    </a>
-    <a id="adoptados animal" href="">
-      <div class="img">
-        <img class="animales" src='imagenes/adoptado.jpg'/>
-        <span>Adoptados</span>
-      </div>
-    </a>
-  </section>
+  <h1>Animales</h1>
+  <form autocomplete="off">
+    <div>
+      <label>Buscar: </label><br>
+      <input type="text" placeholder="Nombre animal" autofocus>
+    </div>
+    <div>
+      <label>Género: </label><br>
+      <input type="radio" name="genero" value="" checked> Todos <br>
+      <input type="radio" name="genero" value="macho"> Macho <br>
+      <input type="radio" name="genero" value="hembra"> Hembre
+    </div>
+    <div>
+      <label>Edad: </label><br>
+      <input type="checkbox" name="edad" value="cachorro">Cachorro<br>
+      <input type="checkbox" name="vehicle" value="adulto">Adulto<br>
+      <input type="checkbox" name="vehicle" value="viejo">Viejo
+    </div>
+    <div>
+      <label>Tamaño: </label><br>
+      <input type="checkbox" name="edad" value="cachorro">Pequeño<br>
+      <input type="checkbox" name="vehicle" value="adulto">Mediano<br>
+      <input type="checkbox" name="vehicle" value="viejo">Grande
+    </div>
+    <div>
+      <label>Razas: (Se cogeran las razas con js y por ahora no operativo)</label><br>
+      <select class="razas">
+        <option></option>
+      </select>
+    </div>
+    <div>
+      <input class="boton" type="button" value="Buscar">
+    </div>
+  </form>
+  <section id="animales">
 
+  </section>
 </div><!-- /.container -->
+
 <footer>Copyright © Oficial ® - PetSOS 2017
   <a href="https://www.facebook.com/adaits.es"><img src="imagenes/facebook.png" class="social"></a>
   <a href="https://mobile.twitter.com/ada_its"><img src="imagenes/twitter.png" class="social"></a>
