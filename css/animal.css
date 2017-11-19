@@ -1,0 +1,24 @@
+.body {
+  padding-top: 20px;
+}
+
+.body div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.body div img {
+  height: 40%;
+  width: 40%;
+}
+
+.mitad {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 2000px) and (orientation: portrait) {
+  .body div {
+    display: block;
+  }
+}
