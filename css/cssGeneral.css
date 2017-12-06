@@ -18,6 +18,14 @@ a:hover, a:active {
   color: #F6D479;
 }
 
+.boton {
+  height: 60px;
+  width: 60px;
+  background-color: #F6D479;
+  margin-top: 30px;
+  float: right;
+}
+
 
 /*Footer*/
 footer {
@@ -110,6 +118,10 @@ ul.nav {
   height: 40px;
 }
 
+ul.nav li:hover {
+  background-color: #EDEDF5;
+}
+
 /*Fuente*/
 @font-face {
   font-family: "Coolvetica";
@@ -134,10 +146,6 @@ ul.nav {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
-  }
-
-  ul.nav li:hover {
-    background-color: #EDEDF5;
   }
 
   nav div ul {
