@@ -1,0 +1,33 @@
+body{
+    background-color: #EDEDF5;
+}
+
+.nav-bar{
+    border-radius: 10px;
+    list-style: none;
+}
+
+nav{
+    background-color: rgb(255, 194, 83);
+}
+
+ul li{
+    display: inline;
+    list-style-type: none;
+    color: black;
+    font-family: Coolvetica;
+    padding-right: 10px;
+}
+
+.adoptar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.ventajas{
+    column-count: 1;
+}
+.porque{
+    column-count: 1;
+}

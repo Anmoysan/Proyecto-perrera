@@ -21,13 +21,13 @@ form div {
 }
 
 a.animal {
-  margin: 15px;
+  margin: 25px;
   width: 300px;
   height: 200px;
 }
 
 a.animal:hover {
-  color: #505050;
+  color: #922B21;
 }
 
 div.img {
@@ -71,6 +71,8 @@ body h1 {
 }
 
 @media screen and (max-width: 2000px) and (orientation: portrait) {
-
+  form {
+    display: block;
+  }
 
 }
