@@ -3,6 +3,7 @@ body {
   background-color: #EDEDF5;
   margin-bottom: 40px;
   font-family: "Helvetica";
+  text-align: justify;
 }
 
 h1, h2, header strong {

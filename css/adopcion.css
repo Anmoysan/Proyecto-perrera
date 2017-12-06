@@ -12,6 +12,15 @@ form div {
   padding: 15px;
 }
 
+form div div {
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+form div div input {
+  justify-content: flex-start;
+}
+
 .boton {
   height: 100px;
 }
