@@ -1,16 +1,16 @@
-div.img {
+a.img {
   display: table;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   transition: all 2s ease-in-out;
 }
 
 /*Efecto añadido para mejorar la visualizacion*/
-div.img:hover {
-  transform: rotate(720deg) scale(1.8,1.8) translate(0px, 30px);
+a.img:hover {
+  transform: rotate(720deg) scale(1.6,1.6) translate(0px, 30px);
 }
 
-div.img img {
+a.img img {
   margin: 0;
   padding: 0;
   width: 300px;
@@ -18,7 +18,7 @@ div.img img {
   object-fit: contain;
 }
 
-div.img span {
+a.img span {
   font-size: 11px;
   display: table-row;
   background: #F6D479;

@@ -34,29 +34,38 @@
   <h1>Animales</h1>
   <form autocomplete="off">
     <div>
-      <label>Buscar: </label><br>
+      <h4>Buscar: </h4>
       <input type="text" placeholder="Nombre animal" autofocus>
     </div>
     <div>
-      <label>Género: </label><br>
-      <input type="radio" name="genero" value="" checked> Todos <br>
-      <input type="radio" name="genero" value="macho"> Macho <br>
-      <input type="radio" name="genero" value="hembra"> Hembre
+      <h4>Género: </h4>
+      <div>
+        <label>Todos </label>
+        <input type="radio" name="genero" value="" checked>
+      </div>
+      <div>
+        <label>Macho </label>
+        <input type="radio" name="genero" value="macho">
+      </div>
+      <div>
+        <label>Hembra </label>
+        <input type="radio" name="genero" value="hembra">
+      </div>
     </div>
     <div>
-      <label>Edad: </label><br>
-      <input type="checkbox" name="edad" value="cachorro">Cachorro<br>
-      <input type="checkbox" name="vehicle" value="adulto">Adulto<br>
+      <h4>Edad: </h4>
+      <input type="checkbox" name="edad" value="cachorro">Cachorro
+      <input type="checkbox" name="vehicle" value="adulto">Adulto
       <input type="checkbox" name="vehicle" value="viejo">Viejo
     </div>
     <div>
-      <label>Tamaño: </label><br>
-      <input type="checkbox" name="edad" value="cachorro">Pequeño<br>
-      <input type="checkbox" name="vehicle" value="adulto">Mediano<br>
+      <h4>Tamaño: </h4>
+      <input type="checkbox" name="edad" value="cachorro">Pequeño
+      <input type="checkbox" name="vehicle" value="adulto">Mediano
       <input type="checkbox" name="vehicle" value="viejo">Grande
     </div>
     <div>
-      <label>Razas: (Se cogeran las razas con js y por ahora no operativo)</label><br>
+      <h4>Razas: (Se cogeran las razas con js y por ahora no operativo)</h4>
       <select class="razas">
         <option></option>
       </select>
