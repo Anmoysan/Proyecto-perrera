@@ -1,20 +1,32 @@
 .body {
-  padding-top: 20px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.body div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+#nombre {
+  padding-bottom: 40px;
 }
 
-.body div img {
-  height: 40%;
-  width: 40%;
+.datos {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.datosIzq {
+  grid-column: 1/span 5;
+}
+
+.datosDer {
+  grid-column: 6/span 10;
 }
 
 .mitad {
-  flex-direction: column;
+  grid-column: 1/span 8;
+}
+
+.imagen {
+  grid-column: 9/span 12;
 }
 
 .boton {
@@ -26,10 +38,6 @@
 
 form a:hover {
   color: #922B21;
-}
-
-img.mitad:hover {
-  transform: translate(10px, 10px);
 }
 
 @media screen and (max-width: 2000px) and (orientation: portrait) {

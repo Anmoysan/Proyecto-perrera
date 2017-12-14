@@ -1,78 +1,42 @@
-class Animal {
-  constructor(id, imagen, nombre, descripcion, tipo, raza, estado, genero, edad, tamaño, peso) {
-    /**
-     * Se controla en imagen, nombre, descripcion, tipo, raza, estado, genero y tamaño si son cadena vacia o de tipo numero.
-     */
-    if (imagen.length === 0) {
-      throw new Error(error);
-    } else {
-      this.imagen = imagen;
-    }
+window.onload = function crearAnimales() {
 
-    if (nombre === "" || typeof nombre !== "string") {
-      throw new Error(error);
-    } else {
-      this.nombre = nombre;
-    }
+  let id = getQueryVariable("id");
+  let animal = arrayAnimales[id-1];
 
-    if (descripcion === "" || typeof descripcion !== "string") {
-      throw new Error(error);
-    } else {
-      this.descripcion = descripcion;
-    }
+  //Guardo el elemento tabla mediante la IP
+  let nombre = document.getElementById("nombre");
+  let imagen = document.getElementById("imagen");
+  let descripcion = document.getElementById("descripcion");
+  let tipo = document.getElementById("tipo");
+  let raza = document.getElementById("raza");
+  let estado = document.getElementById("estado");
+  let genero = document.getElementById("genero");
+  let edad = document.getElementById("edad");
+  let tamano = document.getElementById("tamano");
+  let peso = document.getElementById("peso");
 
-    if (tipo === "" || typeof tipo !== "string") {
-      throw new Error(error);
-    } else {
-      this.tipo = tipo;
-    }
+  //Creo los elementos y le doy atributos
 
-    if (raza === "" || typeof raza !== "string") {
-      throw new Error(error);
-    } else {
-      this.raza = raza;
-    }
+  let textoNombre = document.createTextNode(animal.nombre);
+  imagen.setAttribute("src", animal.imagen);
+  let textoImagen = document.createTextNode(animal.imagen);
+  let textoDescripcion = document.createTextNode(animal.descripcion);
+  let textoTipo = document.createTextNode(animal.tipo);
+  let textoRaza = document.createTextNode(animal.raza);
+  let textoEstado = document.createTextNode(animal.estado);
+  let textoGenero = document.createTextNode(animal.genero);
+  let textoEdad = document.createTextNode(animal.edad);
+  let textoTamano = document.createTextNode(animal.tamano);
+  let textoPeso = document.createTextNode(animal.peso);
 
-    if (estado === "" || typeof estado !== "string") {
-      throw new Error(error);
-    } else {
-      this.estado = estado;
-    }
-
-    if (genero === "" || typeof genero !== "string") {
-      throw new Error(error);
-    } else {
-      this.genero = genero;
-    }
-
-    if (tamaño === "" || typeof tamaño !== "string") {
-      throw new Error(error);
-    } else {
-      this.tamaño = tamaño;
-    }
-
-    /**
-     * En plataforma se controla que la edad y peso no sea menor de 0 y que el tipo de dato no sea de tipo cadena
-     */
-
-    this.id = id;
-
-    if (edad < 0 || typeof edad !== "number") {
-      throw new Error(error);
-    } else {
-      this.edad = edad;
-    }
-
-    if (edad < 0 || typeof edad !== "number") {
-      throw new Error(error);
-    } else {
-      this.edad = edad;
-    }
-
-    if (peso < 0 || typeof peso !== "number") {
-      throw new Error(error);
-    } else {
-      this.peso = peso;
-    }
-  }
-}
+  //Insertar los alementos
+  nombre.appendChild(textoNombre);
+  descripcion.appendChild(textoDescripcion);
+  tipo.appendChild(textoTipo);
+  raza.appendChild(textoRaza);
+  estado.appendChild(textoEstado);
+  genero.appendChild(textoGenero);
+  edad.appendChild(textoEdad);
+  tamano.appendChild(textoTamano);
+  peso.appendChild(textoPeso);
+};
