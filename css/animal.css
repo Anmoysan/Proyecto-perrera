@@ -14,19 +14,22 @@
 }
 
 .datosIzq {
-  grid-column: 1/span 5;
+  grid-column: 1/ 5;
 }
 
 .datosDer {
-  grid-column: 6/span 10;
+  grid-column: 6/ 10;
 }
 
 .mitad {
-  grid-column: 1/span 8;
+  grid-column: 1/ 5;
 }
 
-.imagen {
-  grid-column: 9/span 12;
+#imagen, #foto {
+  grid-column: 6/ 12;
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .boton {
@@ -41,7 +44,21 @@ form a:hover {
 }
 
 @media screen and (max-width: 2000px) and (orientation: portrait) {
-  .body div {
+  body div, .mitad, .body {
     display: block;
+  }
+
+  #imagen {
+    display: inline-block;
+  }
+
+  #foto {
+    width: auto;
+    height: auto;
+    object-fit: fill;
+  }
+
+  .cajaboton {
+    margin-top: 30px;
   }
 }

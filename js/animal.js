@@ -17,8 +17,12 @@ window.onload = function crearAnimales() {
 
   //Creo los elementos y le doy atributos
 
+  let img = document.createElement("img");
+  img.setAttribute("id", "foto");
+  img.setAttribute("alt", "Imagen de " + animal.nombre);
+  img.setAttribute("src", animal.imagen[0]);
+
   let textoNombre = document.createTextNode(animal.nombre);
-  imagen.setAttribute("src", animal.imagen);
   let textoImagen = document.createTextNode(animal.imagen);
   let textoDescripcion = document.createTextNode(animal.descripcion);
   let textoTipo = document.createTextNode(animal.tipo);
@@ -31,6 +35,7 @@ window.onload = function crearAnimales() {
 
   //Insertar los alementos
   nombre.appendChild(textoNombre);
+  imagen.appendChild(img);
   descripcion.appendChild(textoDescripcion);
   tipo.appendChild(textoTipo);
   raza.appendChild(textoRaza);
