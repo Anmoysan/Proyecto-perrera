@@ -79,11 +79,27 @@ body h1 {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 2000px) and (orientation: portrait) {
-  form {
+fieldset div {
+  border-bottom: solid 1px #EDEDF5;
+}
+
+fieldset div div {
+  border-bottom: 0px;
+}
+
+@media screen and (max-width: 990px) {
+  body div{
+    text-align: center;
+  }
+
+  form, legend div {
     display: block;
     text-align: left;
     padding: 20px;
+  }
+
+  .cuerpo {
+    display: block;
   }
 
 }
