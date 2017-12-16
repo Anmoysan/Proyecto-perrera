@@ -8,18 +8,31 @@
     transform: translate(14px);
 }
 .videotext {
-    column-count: 1;
+    column-count:1;
+}
+
+.video{
+    grid-column: 8/ span 10;
+    object-position: center;
+}
+
+.introduction{
+    grid-column: 3 / span 10;
 }
 
 .donationcontainer{
-    height: 350px;
-    width: 345px;
+    grid-column: 3 / span 4;
 }
 
-.body{
-    display: flex;
+.container{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
     justify-content: space-between;
     padding-top:20px;
+}
+
+.eslogan{
+    grid-column: 5 / span 8;
 }
 
 .textdonation{
@@ -39,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: 2000px) and (orientation: portrait) {
+@media screen and (min-width: 1536px) and (orientation: portrait) {
 
     .body {
         flex-wrap: wrap-reverse;
