@@ -1,20 +1,35 @@
 .body {
-  padding-top: 20px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.body div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+#nombre {
+  padding-bottom: 40px;
 }
 
-.body div img {
-  height: 40%;
-  width: 40%;
+.datos {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.datosIzq {
+  grid-column: 1/ 5;
+}
+
+.datosDer {
+  grid-column: 6/ 10;
 }
 
 .mitad {
-  flex-direction: column;
+  grid-column: 1/ 5;
+}
+
+#imagen, #foto {
+  grid-column: 6/ 12;
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .boton {
@@ -28,12 +43,22 @@ form a:hover {
   color: #922B21;
 }
 
-img.mitad:hover {
-  transform: translate(10px, 10px);
-}
-
 @media screen and (max-width: 2000px) and (orientation: portrait) {
-  .body div {
+  body div, .mitad, .body {
     display: block;
+  }
+
+  #imagen {
+    display: inline-block;
+  }
+
+  #foto {
+    width: auto;
+    height: auto;
+    object-fit: fill;
+  }
+
+  .cajaboton {
+    margin-top: 30px;
   }
 }

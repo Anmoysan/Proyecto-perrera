@@ -6,7 +6,7 @@ body {
   text-align: justify;
 }
 
-h1, h2, header strong {
+h1, h2, h3, h4, h5, h6, header strong {
   font-family: "Coolvetica";
 }
 
@@ -76,11 +76,6 @@ header {
 
 header:hover {
   padding-top: 12px;
-  position: relative;
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
 }
 
 header img {
@@ -142,10 +137,6 @@ ul.nav li:hover {
   header:hover {
     padding-top: 0px;
     font-size: x-large;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
   }
 
   nav div ul {

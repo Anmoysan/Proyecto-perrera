@@ -1,24 +1,24 @@
-form {
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.filtro {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #F6D479;
+  grid-column: 1/4;
+}
+
+.datos {
+  grid-column: 5/12;
+}
+
+.filtro fieldset {
   display: flex;
   justify-content: space-around;
-  align-content: stretch;
-}
-
-form div {
-  background-color: #FFC253;
-  padding: 15px;
-}
-
-form div div {
-  padding: 0px;
-  justify-content: flex-end;
-}
-
-form div div input {
-  justify-content: flex-start;
+  align-content: center;
+  align-items: stretch;
 }
 
 .boton {
@@ -82,6 +82,8 @@ body h1 {
 @media screen and (max-width: 2000px) and (orientation: portrait) {
   form {
     display: block;
+    text-align: left;
+    padding: 20px;
   }
 
 }
