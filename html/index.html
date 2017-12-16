@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.9.2/mediaelement-and-player.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.9.2/mediaelementplayer.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.9.2/mediaelementplayer.min.css"/>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/cssGeneral.css">
     <title>PetSOS</title>
@@ -14,19 +14,44 @@
 <body>
 <header>
     <img class="logo" src="../imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
-    class="logo" src="../imagenes/logo.png">
+        class="logo" src="../imagenes/logo.png">
+
+
 </header>
 
-<nav>
+
+<nav class="navbar" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-center">
+            <li id="index"><a href="index.html">Inicio</a></li>
+            <li id="adoptar"><a href="menuAdopcion.html">Adoptar animales</a></li>
+            <li id="instrucciones"><a href="comoadoptar.html">Como adoptar un animal</a></li>
+            <li id="contacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!--<nav>
     <div class="container">
+        <div class="col-md-6 col-md-offset-3 navbar-center">
         <ul class="nav navbar-nav">
             <li id="index"><a href="index.html">Inicio</a></li>
             <li id="adoptar"><a href="menuAdopcion.html">Adoptar animales</a></li>
             <li id="instrucciones"><a href="comoadoptar.html">Como adoptar un animal</a></li>
             <li id="contacto"><a href="contacto.html">Contacto</a></li>
         </ul>
+        </div>
     </div>
-</nav>
+</nav>-->
+
 
 <div class="container body">
     <aside class="donationcontainer">
@@ -35,21 +60,24 @@
         <a href="http://paypal.com"><img class="donationimage" src="../imagenes/paypal_logo.png"></a>
         <br>
         <br>
-        <p class="textdonation">Generalmente aprovechamos todo lo que llega a nuestras manos, si son cosas que podamos utilizar en el
+        <p class="textdonation">Generalmente aprovechamos todo lo que llega a nuestras manos, si son cosas que podamos
+            utilizar en el
             albergue perfecto y si no, lo llevamos a nuestros mercadillos y lo vendemos para poder recaudar
             fondos.</p>
     </aside>
 
     <section class="video">
         <br>
-        <p class="videotext">Esta es la protectora de animales que han formado un par de compañeros de clases para que no haya mas animales
+        <p class="videotext">Esta es la protectora de animales que han formado un par de compañeros de clases para que
+            no haya mas animales
             en la calle </p>
         <br>
         <h2>Consejos para adoptar un perro</h2>
-        <p class="videotext">Esto es un video con un par de consejos sobre que pasos seguir para adoptar a el perro ideal para ti</p>
+        <p class="videotext">Esto es un video con un par de consejos sobre que pasos seguir para adoptar a el perro
+            ideal para ti</p>
 
         <video width="420" height="345" id="player1" preload="none">
-            <source type="video/youtube" src="https://www.youtube.com/watch?v=r1kZ0AFPGgE" />
+            <source type="video/youtube" src="https://www.youtube.com/watch?v=r1kZ0AFPGgE"/>
         </video>
 
         <script>
