@@ -13,10 +13,10 @@
 
 # Especificaciones
 
-![responsive](https://img.shields.io/badge/responsive-running-green.svg?colorB=00C106)
+![responsive](https://img.shields.io/badge/responsive-2/4-green.svg?colorB=00C106)
 ![autocomplete](https://img.shields.io/badge/autocomplete-running-green.svg?colorB=00C106)
-![usability](https://img.shields.io/badge/usability-AAA-green.svg?colorB=00C106)
-![validation](https://img.shields.io/badge/validation-OK-green.svg?colorB=00C106)
+![usability](https://img.shields.io/badge/usability-OK-green.svg?colorB=00C106)
+![validation](https://img.shields.io/badge/validation-2/4-green.svg?colorB=00C106)
 
 ![navigation](https://img.shields.io/badge/navigation-easy-blue.svg)
 ![design](https://img.shields.io/badge/design-minimalist-blue.svg?)
