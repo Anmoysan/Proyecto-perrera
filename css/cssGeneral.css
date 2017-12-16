@@ -77,12 +77,12 @@ header {
 }
 
 
-.navbar-nav.navbar-center {
+.navbar-nav {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-
 }
+
 nav{
     background-color: #FFC253;
 }
@@ -146,11 +146,5 @@ ul.nav li:hover {
   header:hover {
     padding-top: 0px;
     font-size: x-large;
-  }
-
-  nav div ul {
-    display: block;
-    grid-template-columns: repeat(12, 1fr);
-    text-align: center;
   }
 }
