@@ -19,7 +19,7 @@ window.onload = function crearAnimales() {
 
   //Creo los elementos y le doy atributos
   //let datosboton = boton.getAttribute("onclick");
-  boton.setAttribute("onclick", "location=\"" + datosboton + "\"");
+  boton.setAttribute("onclick", "adopcion(" + id + ")");
 
   let img = document.createElement("img");
   img.setAttribute("id", "foto");
@@ -49,3 +49,7 @@ window.onload = function crearAnimales() {
   tamano.appendChild(textoTamano);
   peso.appendChild(textoPeso);
 };
+
+function adopcion(id) {
+  location="../html/formulario-adopcion.html?id=" + id;
+}

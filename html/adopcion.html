@@ -45,14 +45,14 @@
   <h1>Animales</h1>
   <div class="cuerpo">
     <div class="filtro">
-      <h2>Filtro</h2>
       <form autocomplete="off">
         <fieldset>
-          <legend>
+          <legend><h2>Filtro</h2></legend>
+          <div>
             <label for="buscar">Buscar: </label>
             <input type="text" id="buscar" placeholder="Nombre animal" autofocus>
-          </legend>
-          <legend>
+          </div>
+          <div>
             <p>Género: </p>
             <div>
               <label for="todosSexo">Todos </label>
@@ -66,8 +66,8 @@
               <label for="hembra">Hembra </label>
               <input type="radio" id="hembra" name="genero" value="hembra">
             </div>
-          </legend>
-          <legend>
+          </div>
+          <div>
             <p>Edad: </p>
             <div>
               <label for="cachorro">Cachorro </label>
@@ -81,8 +81,8 @@
               <label for="viejo">Viejo </label>
               <input type="checkbox" id="viejo" name="vehicle" value="viejo">
             </div>
-          </legend>
-          <legend>
+          </div>
+          <div>
             <p>Tamaño: </p>
             <div>
               <label for="pequeno">Pequeño </label>
@@ -96,8 +96,8 @@
               <label for="grande">Grande </label>
               <input type="checkbox" id="grande" name="vehicle" value="viejo">
             </div>
-          </legend>
-          <legend>
+          </div>
+          <div>
             <label for="raza">Razas: </label>
             <select id="raza" class="razas">
               <option>Affenpinscher</option>
@@ -341,7 +341,7 @@
               <option>Xoloitzcuintle</option>
               <option>Yorkshire terrier</option>
             </select>
-          </legend>
+          </div>
           <input class="boton" type="button" value="Buscar">
         </fieldset>
       </form>
