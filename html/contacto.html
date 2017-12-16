@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:text-align="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/menuAdopcion.css">
     <link rel="stylesheet" href="../css/cssGeneral.css">
+    <script type="text/javascript" src="../js/contacto.js"></script>
+
     <title>PetSOS</title>
 </head>
 
 <body>
 <header>
-    <img class="logo" src="../imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
-        class="logo" src="../imagenes/logo.png">
+    <img class="logo" alt="Logo" src="../imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
+        class="logo" alt="Logo" src="../imagenes/logo.png">
 </header>
 
 <nav>
@@ -26,31 +32,46 @@
     </div>
 </nav>
 
+<div class="form-group col-md-5" id="somos">
+    <h3 class="animated bounceInLeft">¿Quienes Somos?</h3>
 
+    <p><h4 class="animated bounceInLeft">
+    Somos una asociación de emprendedores dedicada a luchar contra el abandono y maltrato animal sin animo de lucro, que
+    realizan recogida de animales para salvar sus vidas y para que persona como usted pueda tener un miembro mas en su
+    familia, tambien intentamos concienciar a las personas que no abandones a sus mascotas y ayudar al maltrato animal.
+    Este formularios ayuda ha ponerse en  contacto con nosotros en caso de alguna duda o si necesitas algun tipo de
+    información y para otras consultas.
+    </h4></p>
 
-<form>
+    <p class="animated bounceInLeft">Correo electronico: petsosadopcion@gmail.com</p>
+    <p class="animated bounceInLeft">Numero de contacto: 954 99 96 17</p>
+    <p class="animated bounceInLeft">Numero Fax: 951 27 37 36</p>
+    <p class="animated bounceInLeft">Nos situamos en: Av. Turia, 11, 41019 Sevilla</p>
+</div>
 
-    <h3>↓ Formulario ↓</h3>
+<form id="formulario">
+
+    <h3>Contacta con nosotros</h3>
 
     <div class="form-group col-md-2">
-        <label for="inputName">Nombre</label>
-        <input type="text" class="form-control" id="inputName" required="required" placeholder="Nombre">
+        <label for="inputName" >Nombre</label>
+        <input type="text" class="form-control" id="inputName" autocomplete="on" required="required" placeholder="Nombre">
     </div>
     <div class="form-group col-md-4">
-        <label for="inputApellidos">Apellidos</label>
-        <input type="text" class="form-control" id="inputApellidos" required="required" placeholder="Apellidos">
+        <label for="inputApellidos" >Apellidos</label>
+        <input type="text" class="form-control" id="inputApellidos" autocomplete="on" required="required" placeholder="Apellidos">
 
     </div>
     <div class="form-group col-md-2">
-        <label for="inputTlfn">Telefono</label>
-        <input type="text" class="form-control" id="inputTlfn" required="required" placeholder="Numero de telefono">
+        <label for="inputTlfn" >Telefono</label>
+        <input type="text" class="form-control" id="inputTlfn" autocomplete="on" required="required" placeholder="Numero de telefono">
     </div>
 
     </div>
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" required="required" placeholder="Email">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" autocomplete="on" required="required" placeholder="Email">
         </div>
     </div>
     <div class="form-row">
@@ -81,18 +102,19 @@
         <input type="text" class="form-control" id="inputAsunto" required="required" placeholder="Asunto">
     </div>
     </div>
-    <div class="form-group">
+    <div id="textarea" class="form-group">
         <label for="mensajeText">Mensaje</label>
-        <textarea class="form-control" id="mensajeText" required="required" placeholder="Mensaje" rows="3"></textarea>
+        <textarea class="form-control" id="mensajeText" required="required" autocomplete="on" placeholder="Mensaje" rows="3"></textarea>
     </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
 </form>
 
-<h3>↓ Nos encontramos en ↓</h3>
-<div id="map"></div>
 
+
+
+<div id="map"></div>
 
 <script>
     function initMap() {
