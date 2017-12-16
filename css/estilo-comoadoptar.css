@@ -24,10 +24,3 @@ ul li{
     justify-content: space-between;
     margin: 20px;
 }
-
-.ventajas{
-    column-count: 1;
-}
-.porque{
-    column-count: 1;
-}

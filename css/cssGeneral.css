@@ -3,9 +3,10 @@ body {
   background-color: #EDEDF5;
   margin-bottom: 40px;
   font-family: "Helvetica";
+  text-align: justify;
 }
 
-h1, h2, header strong {
+h1, h2, h3, h4, h5, h6, header strong {
   font-family: "Coolvetica";
 }
 
@@ -15,6 +16,14 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #F6D479;
+}
+
+.boton {
+  height: 60px;
+  width: 60px;
+  background-color: #F6D479;
+  margin-top: 30px;
+  float: right;
 }
 
 
@@ -67,11 +76,6 @@ header {
 
 header:hover {
   padding-top: 12px;
-  position: relative;
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
 }
 
 header img {
@@ -109,6 +113,10 @@ ul.nav {
   height: 40px;
 }
 
+ul.nav li:hover {
+  background-color: #EDEDF5;
+}
+
 /*Fuente*/
 @font-face {
   font-family: "Coolvetica";
@@ -129,14 +137,6 @@ ul.nav {
   header:hover {
     padding-top: 0px;
     font-size: x-large;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-  }
-
-  ul.nav li:hover {
-    background-color: #EDEDF5;
   }
 
   nav div ul {

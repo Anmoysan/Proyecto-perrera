@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <title>PetSOS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="../js/animal.js"></script>
-  <script type="text/javascript" src="../js/objetosPrueba.js"></script>
-  <script type="text/javascript" src="../js/adopcion.js"></script>
+  <script src="../js/class.js"></script>
+  <script src="../js/objetosPrueba.js"></script>
+  <script src="../js/adopcion.js"></script>
+  <script src="../js/jsGeneral.js"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="../css/adopcion.css">
   <link rel="stylesheet" href="../css/cssGeneral.css">
-  <title>PetSOS</title>
 </head>
 
 <body>
 <header>
-  <img class="logo" src="../imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
-    class="logo" src="../imagenes/logo.png">
+  <img class="logo" src="../imagenes/logo.png" alt="Icono del proyecto"><strong>PETSOS ADOPCION DE
+  ANIMALES</strong><img
+    class="logo" src="../imagenes/logo.png" alt="Icono del proyecto">
 </header>
 
 <nav>
@@ -32,49 +34,330 @@
 
 <div class="container">
   <h1>Animales</h1>
-  <form autocomplete="off">
-    <div>
-      <label>Buscar: </label><br>
-      <input type="text" placeholder="Nombre animal" autofocus>
+  <div class="cuerpo">
+    <div class="filtro">
+      <h2>Filtro</h2>
+      <form autocomplete="off">
+        <fieldset>
+          <legend>
+            <label for="buscar"><h3>Buscar: </h3></label>
+            <input type="text" id="buscar" placeholder="Nombre animal" autofocus>
+          </legend>
+          <legend>
+            <h3>Género: </h3>
+            <div>
+              <label for="todosSexo">Todos </label>
+              <input type="radio" id="todosSexo" name="genero" value="" checked>
+            </div>
+            <div>
+              <label for="macho">Macho </label>
+              <input type="radio" id="macho" name="genero" value="macho">
+            </div>
+            <div>
+              <label for="hembra">Hembra </label>
+              <input type="radio" id="hembra" name="genero" value="hembra">
+            </div>
+          </legend>
+          <legend>
+            <h3>Edad: </h3>
+            <div>
+              <label for="cachorro">Cachorro </label>
+              <input type="checkbox" id="cachorro" name="edad" value="cachorro">
+            </div>
+            <div>
+              <label for="adulto">Adulto </label>
+              <input type="checkbox" id="adulto" name="vehicle" value="adulto">
+            </div>
+            <div>
+              <label for="viejo">Viejo </label>
+              <input type="checkbox" id="viejo" name="vehicle" value="viejo">
+            </div>
+          </legend>
+          <legend>
+            <h3>Tamaño: </h3>
+            <div>
+              <label for="pequeno">Pequeño </label>
+              <input type="checkbox" id="pequeno" name="edad" value="cachorro">
+            </div>
+            <div>
+              <label for="mediano">Mediano </label>
+              <input type="checkbox" id="mediano" name="vehicle" value="adulto">
+            </div>
+            <div>
+              <label for="grande">Grande </label>
+              <input type="checkbox" id="grande" name="vehicle" value="viejo">
+            </div>
+          </legend>
+          <legend>
+            <label for="raza"><h3>Razas: </h3></label>
+            <select id="raza" class="razas">
+              <option>Affenpinscher</option>
+              <option>Airedale terrier</option>
+              <option>Aïdi</option>
+              <option>Akita Inu</option>
+              <option>Akita Americano</option>
+              <option>Alano español</option>
+              <option>Alaskan malamute</option>
+              <option>Alaskan Klee Kai</option>
+              <option>American Hairless terrier</option>
+              <option>American Staffordshire Terrier</option>
+              <option>Antiguo Perro Pastor Inglés</option>
+              <option>Appenzeller</option>
+              <option>Australian Cattle Dog</option>
+              <option>Australian terrier</option>
+              <option>Australian Silky Terrier</option>
+              <option>Azawakh</option>
+              <option>Bardino (Perro majorero)</option>
+              <option>"Basenji">Basenji</option>
+              <option>Basset azul de Gascuña</option>
+              <option>Basset hound</option>
+              <option>Beagle</option>
+              <option>Beauceron</option>
+              <option>Bedlington terrier</option>
+              <option>Bergamasco</option>
+              <option>Bichon frisé</option>
+              <option>Bichón maltés</option>
+              <option>Bichón habanero</option>
+              <option>Bobtail</option>
+              <option>Bloodhound</option>
+              <option>Border collie</option>
+              <option>Borzoi</option>
+              <option>Boston terrier</option>
+              <option>Bóxer</option>
+              <option>Boyero de Berna</option>
+              <option>Boyero de Flandes</option>
+              <option>Braco alemán de pelo corto</option>
+              <option>Braco alemán de pelo duro</option>
+              <option>Braco de Auvernia</option>
+              <option>Braco francés</option>
+              <option>Braco húngaro</option>
+              <option>Braco italiano</option>
+              <option>Braco tirolés</option>
+              <option>Braco de Saint Germain</option>
+              <option>Braco de Weimar</option>
+              <option>Bull Terrier</option>
+              <option>Bulldog americano</option>
+              <option>Bulldog francés</option>
+              <option>Bulldog inglés</option>
+              <option>Bullmastiff</option>
+              <option>Buhund noruego</option>
+              <option>Can de palleiro</option>
+              <option>Caniche</option>
+              <option>Cão da Serra da Estrela</option>
+              <option>Cão da Serra de Aires</option>
+              <option>Cão de Agua Português</option>
+              <option>Cão de Castro Laboreiro</option>
+              <option>Cão de Fila de São Miguel</option>
+              <option>Cavalier King Charles Spaniel</option>
+              <option>Cazador de alces noruego</option>
+              <option>Chesapeake Bay Retriever</option>
+              <option>Chihuahueño</option>
+              <option>Crestado Chino</option>
+              <option>Cimarrón Uruguayo</option>
+              <option>Cirneco del Etna</option>
+              <option>Chow chow</option>
+              <option>Clumber spaniel</option>
+              <option>Cobrador de pelo liso</option>
+              <option>Cocker spaniel americano</option>
+              <option>Cocker spaniel inglés</option>
+              <option>Collie de pelo corto</option>
+              <option>Collie de pelo largo</option>
+              <option>Bearded collie</option>
+              <option>Corgi galés de Cardigan</option>
+              <option>Dachshund</option>
+              <option>Dálmata</option>
+              <option>Dandie Dinmont Terrier</option>
+              <option>Deerhound</option>
+              <option>Dobermann</option>
+              <option>Dogo alemán</option>
+              <option>Dogo argentino</option>
+              <option>Dogo de burdeos</option>
+              <option>Dogo del Tíbet</option>
+              <option>Dogo guatemalteco</option>
+              <option>English springer spaniel</option>
+              <option>Entlebucher</option>
+              <option>Épagneul bretón</option>
+              <option>Épagneul français</option>
+              <option>Epagneul papillón</option>
+              <option>Eurasier</option>
+              <option>Fila Brasileiro</option>
+              <option>Flat-Coated Retriever</option>
+              <option>Fox Terrier</option>
+              <option>Foxhound americano</option>
+              <option>Galgo español</option>
+              <option>Galgo húngaro</option>
+              <option>Galgo inglés</option>
+              <option>Galgo italiano</option>
+              <option>Golden retriever</option>
+              <option>Glen of Imaal Terrier</option>
+              <option>Gran danés</option>
+              <option>Gegar colombiano</option>
+              <option>Greyhound</option>
+              <option>Grifón belga</option>
+              <option>Hovawart</option>
+              <option>Husky siberiano</option>
+              <option>Jack Russell Terrier</option>
+              <option>Keeshond</option>
+              <option>Kerry blue terrier</option>
+              <option>Komondor</option>
+              <option>Kuvasz</option>
+              <option>Labrador</option>
+              <option>Lakeland Terrier</option>
+              <option>Laekenois</option>
+              <option>Landseer</option>
+              <option>Lebrel afgano</option>
+              <option>Lebrel polaco</option>
+              <option>Leonberger</option>
+              <option>Lobero irlandés</option>
+              <option>Lundehund</option>
+              <option>Perro lobo de Saarloos</option>
+              <option>Lhasa apso</option>
+              <option>Löwchen</option>
+              <option>Maltés</option>
+              <option>Malinois</option>
+              <option>Manchester terrier</option>
+              <option>Mastín afgano</option>
+              <option>Mastín del Pirineo</option>
+              <option>Mastín español</option>
+              <option>Mastín inglés</option>
+              <option>Mastín italiano</option>
+              <option>Mastín napolitano</option>
+              <option>Mastín tibetano</option>
+              <option>Mucuchies</option>
+              <option>Mudi</option>
+              <option>Münsterländer grande</option>
+              <option>Münsterländer pequeño</option>
+              <option>Nova Scotia Duck Tolling Retriever</option>
+              <option>Ovejero magallánico</option>
+              <option>Pastor alemán</option>
+              <option>Pastor belga</option>
+              <option>Pastor blanco suizo</option>
+              <option>Pastor catalán</option>
+              <option>Pastor croata</option>
+              <option>Pastor garafiano</option>
+              <option>Pastor holandés</option>
+              <option>Pastor peruano Chiribaya</option>
+              <option>Pastor de Brie</option>
+              <option>Pastor de los Pirineos</option>
+              <option>Pastor leonés</option>
+              <option>Pastor mallorquín</option>
+              <option>Pastor maremmano-abrucés</option>
+              <option>Pastor de Valée</option>
+              <option>Pastor vasco</option>
+              <option>Pekinés</option>
+              <option>Pembroke Welsh Corgi</option>
+              <option>Pequeño Lebrel Italiano</option>
+              <option>Perdiguero francés</option>
+              <option>Perdiguero portugués</option>
+              <option>Perro cimarrón uruguayo</option>
+              <option>Perro de agua americano</option>
+              <option>Perro de agua español</option>
+              <option>Perro de agua irlandés</option>
+              <option>Perro de agua portugués</option>
+              <option>Perro de Groenlandia</option>
+              <option>Perro de osos de Carelia</option>
+              <option>Perro dogo mallorquín</option>
+              <option>Perro esquimal canadiense</option>
+              <option>Perro de Montaña de los Pirineos</option>
+              <option>Perro fino colombiano</option>
+              <option>Perro pastor de las islas Shetland</option>
+              <option>Perro peruano sin pelo</option>
+              <option>Phalène</option>
+              <option>Pinscher alemán</option>
+              <option>Pinscher miniatura</option>
+              <option>Pitbull</option>
+              <option>Podenco canario</option>
+              <option>Podenco ibicenco</option>
+              <option>Podenco portugués</option>
+              <option>Pointer</option>
+              <option>Pomerania</option>
+              <option>Presa canario</option>
+              <option>Pudelpointer</option>
+              <option>Pug</option>
+              <option>Puli</option>
+              <option>Pumi</option>
+              <option>Rafeiro do Alentejo</option>
+              <option>Ratonero bodeguero andaluz</option>
+              <option>Ratonero mallorquín</option>
+              <option>Ratonero valenciano</option>
+              <option>Rhodesian Ridgeback</option>
+              <option>Rottweiler</option>
+              <option>Saluki</option>
+              <option>Samoyedo</option>
+              <option>San Bernardo</option>
+              <option>Schapendoes</option>
+              <option>Schnauzer estándar</option>
+              <option>Schnauzer gigante</option>
+              <option>Schnauzer miniatura</option>
+              <option>Staffordshire Bull Terrier</option>
+              <option>Sabueso bosnio</option>
+              <option>Schipperke</option>
+              <option>Sealyham terrier</option>
+              <option>Setter inglés</option>
+              <option>Setter irlandés</option>
+              <option>Shar Pei</option>
+              <option>Shiba Inu</option>
+              <option>Shih Tzu</option>
+              <option>Shikoku Inu</option>
+              <option>Siberian husky</option>
+              <option>Skye terrier</option>
+              <option>Spaniel japonés</option>
+              <option>Spaniel tibetano</option>
+              <option>Spitz enano</option>
+              <option>Spitz grande</option>
+              <option>Spitz mediano</option>
+              <option>Spitz japonés</option>
+              <option>Sussex spaniel</option>
+              <option>Teckel</option>
+              <option>Terranova</option>
+              <option>Terrier alemán</option>
+              <option>Terrier brasileño</option>
+              <option>Terrier checo</option>
+              <option>Terrier chileno</option>
+              <option>Terrier de Norfolk</option>
+              <option>Terrier de Norwich</option>
+              <option>Terrier escocés</option>
+              <option>Terrier galés</option>
+              <option>Terrier irlandés</option>
+              <option>Terrier ruso negro</option>
+              <option>Terrier tibetano</option>
+              <option>Toy spaniel inglés</option>
+              <option>Tervueren</option>
+              <option>Vallhund sueco</option>
+              <option>Volpino italiano</option>
+              <option>Weimaraner</option>
+              <option>West Highland White Terrier</option>
+              <option>Whippet</option>
+              <option>Wolfsspitz</option>
+              <option>Xoloitzcuintle</option>
+              <option>Yorkshire terrier</option>
+            </select>
+          </legend>
+          <input class="boton" type="button" value="Buscar">
+        </fieldset>
+      </form>
     </div>
-    <div>
-      <label>Género: </label><br>
-      <input type="radio" name="genero" value="" checked> Todos <br>
-      <input type="radio" name="genero" value="macho"> Macho <br>
-      <input type="radio" name="genero" value="hembra"> Hembre
-    </div>
-    <div>
-      <label>Edad: </label><br>
-      <input type="checkbox" name="edad" value="cachorro">Cachorro<br>
-      <input type="checkbox" name="vehicle" value="adulto">Adulto<br>
-      <input type="checkbox" name="vehicle" value="viejo">Viejo
-    </div>
-    <div>
-      <label>Tamaño: </label><br>
-      <input type="checkbox" name="edad" value="cachorro">Pequeño<br>
-      <input type="checkbox" name="vehicle" value="adulto">Mediano<br>
-      <input type="checkbox" name="vehicle" value="viejo">Grande
-    </div>
-    <div>
-      <label>Razas: (Se cogeran las razas con js y por ahora no operativo)</label><br>
-      <select class="razas">
-        <option></option>
-      </select>
-    </div>
-    <div>
-      <input class="boton" type="button" value="Buscar">
-    </div>
-  </form>
-  <section class="animales">
 
-  </section>
-</div><!-- /.container -->
+    <div class="datos">
+      <section>
+        <h3>Resultados:</h3>
+        <div class="animales">
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
 <footer>Copyright © Oficial ® - PetSOS 2017
-  <a href="https://www.facebook.com/adaits.es"><img src="../imagenes/facebook.png" class="social"></a>
-  <a href="https://mobile.twitter.com/ada_its"><img src="../imagenes/twitter.png" class="social"></a>
-  <a href="https://plus.google.com/"><img src="../imagenes/plus.png" class="social"></a>
-  <a href="mailto:info@icada.es"><img src="../imagenes/gmail.png" class="social"></a>
+  <a href="https://www.facebook.com/adaits.es"><img src="../imagenes/facebook.png"
+                                                    class="social" alt="Imagen de Facebook"></a>
+  <a href="https://mobile.twitter.com/ada_its"><img src="../imagenes/twitter.png"
+                                                    class="social" alt="Imagen de Twitter"></a>
+  <a href="https://plus.google.com/"><img src="../imagenes/plus.png" class="social"
+                                          alt="Imagen de Google+"></a>
+  <a href="mailto:info@icada.es"><img src="../imagenes/gmail.png" class="social"
+                                      alt="Imagen de Gmail"></a>
 </footer>
 </body>
 </html>

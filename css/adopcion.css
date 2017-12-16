@@ -1,15 +1,24 @@
-form {
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.filtro {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #F6D479;
-  display: flex;
-  justify-content: space-around;
-  align-content: stretch;
+  grid-column: 1/4;
 }
 
-form div {
-  background-color: #FFC253;
-  padding: 15px;
+.datos {
+  grid-column: 5/12;
+}
+
+.filtro fieldset {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
 }
 
 .boton {
@@ -73,6 +82,8 @@ body h1 {
 @media screen and (max-width: 2000px) and (orientation: portrait) {
   form {
     display: block;
+    text-align: left;
+    padding: 20px;
   }
 
 }

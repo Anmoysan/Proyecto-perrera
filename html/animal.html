@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="../js/animal.js"></script>
-  <script type="text/javascript" src="../js/objetosPrueba.js"></script>
+  <script src="../js/class.js"></script>
+  <script src="../js/objetosPrueba.js"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="../css/animal.css">
   <link rel="stylesheet" href="../css/cssGeneral.css">
+  <script src="../js/animal.js"></script>
+  <script src="../js/jsGeneral.js"></script>
   <title>PetSOS</title>
 </head>
 
 <body>
 <header>
-  <img class="logo" src="../imagenes/logo.png"><strong>PETSOS ADOPCION DE ANIMALES</strong><img
-    class="logo" src="../imagenes/logo.png">
+  <div>
+    <img class="logo" src="../imagenes/logo.png" alt="Icono del proyecto"><strong>PETSOS ADOPCION DE
+    ANIMALES</strong><img
+      class="logo" src="../imagenes/logo.png" alt="Icono del proyecto">
+  </div>
 </header>
 
 <nav>
@@ -29,37 +34,42 @@
   </div>
 </nav>
 
-<div class="container body">
-  <div>
-    <h1 class="mitad">Nombre(Esta pagina esta en desarrollo por falta de js)</h1>
-    <img src="https://www.mundomascota.net/wp-content/uploads/2016/10/Beagle-peque%C3%B1ito.jpg" class="mitad">
-  </div>
-  <div>
-    <p>Estado: </p>
-    <p>Descripcion: </p>
+<div class="container">
+  <div class="body">
     <div class="mitad">
-      <p>Tipo: </p>
-      <p>Raza: </p>
-      <p>Genero: </p>
+      <h1 id="nombre">Nombre: </h1>
+      <div class="datos">
+        <div class="datosIzq">
+          <p>Estado: <span id="estado"></span></p>
+          <p>Tipo: <span id="tipo"></span></p>
+          <p>Raza: <span id="raza"></span></p>
+          <p>Genero: <span id="genero"></span></p>
+        </div>
+        <div class="datosDer">
+          <p>Descripcion: <span id="descripcion"></span></p>
+          <p>Edad: <span id="edad"></span></p>
+          <p>Tamaño: <span id="tamano"></span></p>
+          <p>Peso: <span id="peso"></span></p>
+        </div>
+      </div>
     </div>
-    <div class="mitad">
-      <p>Edad: </p>
-      <p>Tamaño: </p>
-      <p>Peso: </p>
+    <div id="imagen">
     </div>
   </div>
-  <form>
-    <a href="formulario-adopcion.html"><input class="boton" type="button" value="Adoptar"></a>
+  <form class="cajaboton">
+    <input class="boton" type="button" value="Adoptar" onclick = "location='../html/formulario-adopcion.html'">
   </form>
-</div><!-- /.container -->
+</div>
 
 <footer>Copyright © Oficial ® - PetSOS 2017
   <a href="https://www.facebook.com/adaits.es"><img src="../imagenes/facebook.png"
-                                                    class="social"></a>
+                                                    class="social" alt="Imagen de Facebook"></a>
   <a href="https://mobile.twitter.com/ada_its"><img src="../imagenes/twitter.png"
-                                                    class="social"></a>
-  <a href="https://plus.google.com/"><img src="../imagenes/plus.png" class="social"></a>
-  <a href="mailto:info@icada.es"><img src="../imagenes/gmail.png" class="social"></a>
+                                                    class="social" alt="Imagen de Twitter"></a>
+  <a href="https://plus.google.com/"><img src="../imagenes/plus.png" class="social"
+                                          alt="Imagen de Google+"></a>
+  <a href="mailto:info@icada.es"><img src="../imagenes/gmail.png" class="social"
+                                      alt="Imagen de Gmail"></a>
 </footer>
 </body>
 </html>
