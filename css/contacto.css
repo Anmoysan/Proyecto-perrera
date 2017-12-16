@@ -1,15 +1,53 @@
 #map {
-    float: left;
-    height: 500px;
-    width: 35%;
-    margin: 2%;
+
+    height: 350px;
+    width: 100%;
+
 
 }
+
 h3{
     text-align:center
 }
 
+#textarea{
+    margin: 1%;
+}
+
+#boton{
+    margin: 1%;
+}
+
+#somos{
+    text-align: left;
+}
+
 form{
+
     float: right;
+}
+
+@media (max-width: 1575px) {
+
+    #somos{
+        width: 100%;
+    }
+
+    #formulario{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1277px) {
+
+    #somos{
+        width: 100%;
+    }
+
+    #formulario{
+        width: 100%;
+    }
+
 }
 
