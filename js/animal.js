@@ -14,8 +14,12 @@ window.onload = function crearAnimales() {
   let edad = document.getElementById("edad");
   let tamano = document.getElementById("tamano");
   let peso = document.getElementById("peso");
+  let boton = document.getElementById("boton");
+  let datosboton = "../html/formulario-adopcion.html?id=" + id;
 
   //Creo los elementos y le doy atributos
+  //let datosboton = boton.getAttribute("onclick");
+  boton.setAttribute("onclick", "location=\"" + datosboton + "\"");
 
   let img = document.createElement("img");
   img.setAttribute("id", "foto");
