@@ -1,5 +1,6 @@
 # PetSOS Adopción de animales
 
+Proyecto final de trimestre de interfaces web de 2do año
 
 ![antonio](https://img.shields.io/badge/animales%20para%20adoptar-Antonio-green.svg?colorB=00C106)
 ![adolfo](https://img.shields.io/badge/Inicio-Adolfo-blue.svg?)
