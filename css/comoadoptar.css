@@ -2,15 +2,6 @@ body{
     background-color: #EDEDF5;
 }
 
-.nav-bar{
-    border-radius: 10px;
-    list-style: none;
-}
-
-nav{
-    background-color: rgb(255, 194, 83);
-}
-
 ul li{
     display: inline;
     list-style-type: none;
