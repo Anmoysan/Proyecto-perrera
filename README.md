@@ -2,9 +2,9 @@
 
 
 ![antonio](https://img.shields.io/badge/animales%20para%20adoptar-Antonio-green.svg?colorB=00C106)
-![adolfo](https://img.shields.io/badge/Inicio-Adolfo-green.svg?colorB=00C106)
-![juanjo](https://img.shields.io/badge/Contacto,ayuda-Juanjo-green.svg?colorB=00C106)
-![adrian](https://img.shields.io/badge/Como%20adoptar-Adrian-green.svg?colorB=00C106)
+![adolfo](https://img.shields.io/badge/Inicio-Adolfo-blue.svg?)
+![juanjo](https://img.shields.io/badge/Contacto,ayuda-Juanjo-yellow.svg)
+![adrian](https://img.shields.io/badge/Como%20adoptar-Adrian-orange.svg)
 
 ---
 
@@ -12,6 +12,16 @@
 Éste proyecto consiste en una página web de entorno de cliente enfocada a un refio de animales donde puedes adoptar los mismos.
 
 # Especificaciones
+
+![responsive](https://img.shields.io/badge/responsive-running-green.svg?colorB=00C106)
+![autocomplete](https://img.shields.io/badge/autocomplete-running-green.svg?colorB=00C106)
+![usability](https://img.shields.io/badge/usability-AAA-green.svg?colorB=00C106)
+![validation](https://img.shields.io/badge/validation-OK-green.svg?colorB=00C106)
+
+![navigation](https://img.shields.io/badge/navigation-easy-blue.svg)
+![design](https://img.shields.io/badge/design-minimalist-blue.svg?)
+![content](https://img.shields.io/badge/content-AAA-blue.svg)
+![social](https://img.shields.io/badge/social-OK-blue.svg)
 
 #### Visibilidad del estado del sistema:
   - Muestra al usuario mensaje en el formulario
@@ -32,13 +42,13 @@ El menú es sencillo y fácil de entender.
 El diseño está bien dividido y no muy sobrecargado, ya que tienes un menú para comprar otra para contactar y conocer lo que hace.
 
 #### Relación entre el sistema y el mundo real: 
-La pagina sea mas facil de entender por gente sin conocimientos
+La pagina es mas facil de entender por gente sin conocimientos.
 
 #### Prevención de errores:
 Prevenir que el usuario introduzca datos mal como a la hora de rellenar el formulario no se equivoque en los campos
 
 #### Flexibilidad y eficiencia de uso: 
-La página web sea sencilla para todo tipo de usuarios y no tengan muchas complicaciones manejandola.
+La página web es sencilla para todo tipo de usuarios y no tengan muchas complicaciones manejandola.
 
 #### Diseño estatico y minimalista: 
 Ahorrar espacio en la página quitando informacion innecesaria.
